@@ -80,7 +80,7 @@
 
 * 键盘图示
 
-![图示](http://www.linuxidc.com/upload/2013_05/130509060894671.png) 
+![图示](https://raw.githubusercontent.com/yuanxj1024/blog/master/static/201702/130509060894671.png) 
 
 资料
 
