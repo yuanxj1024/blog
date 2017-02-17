@@ -77,7 +77,13 @@
  * `u` - 撤销刚才的命令
  * `.` - 重复上一次命令
 
+
+* 键盘图示
+
+![图示](http://www.linuxidc.com/upload/2013_05/130509060894671.png) 
+
 资料
 
+* [Vim入门基础](http://www.jianshu.com/p/bcbe916f97e1)
 * [vim 操作技巧视频-playterm](http://playterm.org/)
 * [在线体验vim](http://playterm.org/live)
