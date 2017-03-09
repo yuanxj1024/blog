@@ -12,3 +12,5 @@
 * [vue mintui seed](https://github.com/yuanxj1024/vue-mintui-seed) 
 
 * [vue 全家桶的项目](https://github.com/yuanxj1024/vue-seed)
+
+* [多页项目](https://github.com/yuanxj1024/webpack-many-entry)
