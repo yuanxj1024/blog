@@ -1,0 +1,35 @@
+# 微信小程序开发经验总结
+
+## 经验
+
+#### wxml
+* 允许使用html标签，但会被当做inline标签，不支持所有属性
+* `view`组件上有`hidden`属性，可以直接使用表达式控制元素显示隐藏
+* 在合适的地方实用`scroll-view`组件
+* `wx:if`条件变话会导致组件重复渲染，没有`wx:show`指令
+* 大量文案显示使用`text`组件
+* 处理图文混合的技巧，图文分离重新生成`image`跟`text`组件
+* **scroll-view**的`scroll-to-view`属性值为字符串，纯数字不行
+
+#### js
+* [**App**的生命周期函数](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/app.html)跟[**Page**的生命周期函数](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html)不一样
+* JS 的运行环境和view的运行环境是隔离的，只能通过'page.data'属性传递数据，不可传递函数引用
+* 资源加载，注意目录，针对JS推荐使用`module.exports`导出
+* 跨页面通信
+ * 将数据挂载到全局`App`对象上
+ * 利用一个全局对象进行中转
+
+#### wxss
+* 选择器: id， class, 元素，子父级，伪类（after,before)
+* 推荐使用`rpx`作为单位，取代`px`
+* 不支持引入字体，icon只能使用图片
+* 图片资源不建议放在本地，放在远程更好，有助于减少项目大小
+* pages下的wxss会覆盖`app.wxss`的同名样式,不是样式合并！！
+* @import  注意文件目录 
+
+
+### 资料
+
+* [微信小程序跨页面通信解决思路](https://aotu.io/notes/2017/01/19/wxapp-event/)
+* [微信小程序「官方示例代码」剖析【下】：运行机制](https://www.phodal.com/blog/weapp-demo-process-webkit-app/?nsukey=cbw1D89rau1XcmwnAo5Ib7iKGpLITR3NJF3q8pSDLOohaBDv%2F3OapTKAk7kl7RZ%2BFPFUcwQE4t2DVsJD3r5tmQ%3D%3D)
+* [小程序商店-知晓](https://minapp.com/miniapp/)
