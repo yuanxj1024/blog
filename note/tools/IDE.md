@@ -23,7 +23,9 @@ cmd + shift + -  | 折叠全部代码
 
 | 按键 | 说明 |
 | --- | ---|
-cmd + [ | 上次代码访问位置
+cmd + E | 最近文件操作列表
 
 
 参考资料：
+
+- [键盘快捷键](https://developer.android.com/studio/intro/keyboard-shortcuts?hl=zh-cn)
